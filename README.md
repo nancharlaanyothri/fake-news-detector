@@ -33,6 +33,29 @@ Train-test split
 Logistic Regression model training
 
 Model evaluation using Accuracy
+## 🖼️ Application Screenshots
+
+### 🏠 Home Page
+
+<p align="center">
+  <img src="images/home.png" width="700">
+</p>
+
+---
+
+### ✅ Real News Prediction
+
+<p align="center">
+  <img src="images/real_news.png" width="700">
+</p>
+
+---
+
+### 🛑 Fake News Prediction
+
+<p align="center">
+  <img src="images/fake_news.png" width="700">
+</p>
 
 📊 Dataset
 
