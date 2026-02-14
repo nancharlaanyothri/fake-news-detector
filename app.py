@@ -17,7 +17,7 @@ def home():
         news = news_text.lower()
 
         vectorized = vectorizer.transform([news])
-        pred = model.apredict(vectorized)[0]
+        pred = model.predict(vectorized)[0]
 
         if pred == 0:
             prediction = "🛑 Fake News"
