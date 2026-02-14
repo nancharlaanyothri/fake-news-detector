@@ -1,134 +1,136 @@
-📰 Fake News Detector
+# 📰 Fake News Detector
 
-A Machine Learning powered web application that detects whether a news article is Real or Fake using Natural Language Processing (NLP) and Logistic Regression.
+A **Machine Learning powered web application** that detects whether a news article is **Real or Fake** using **Natural Language Processing (NLP)** and **Logistic Regression**.
 
-🚀 Project Overview
+---
+
+# 🚀 Project Overview
 
 This project uses:
 
-TF-IDF Vectorization for feature extraction
-
-Logistic Regression for classification
-
-Flask for web application development
-
-Scikit-learn for machine learning
+- 🔤 **TF-IDF Vectorization** for feature extraction  
+- 📊 **Logistic Regression** for classification  
+- 🌐 **Flask** for web application development  
+- 🤖 **Scikit-learn** for machine learning  
 
 Users can input any news content, and the system predicts whether it is:
 
-🛑 Fake News
+- 🛑 **Fake News**
+- ✅ **Real News**
 
-✅ Real News
+---
 
-🧠 Machine Learning Workflow
+# 🧠 Machine Learning Workflow
 
-Data preprocessing (cleaning + lowercasing)
+1. 🧹 Data preprocessing (cleaning + lowercasing)
+2. 📰 Combining news title and text
+3. 🔎 TF-IDF feature extraction
+4. 📂 Train-test split
+5. 🤖 Logistic Regression model training
+6. 📈 Model evaluation using Accuracy
 
-Combining news title and text
+---
 
-TF-IDF feature extraction
+# 🖼️ Application Screenshots
 
-Train-test split
-
-Logistic Regression model training
-
-Model evaluation using Accuracy
-## 🖼️ Application Screenshots
-
-### 🏠 Home Page
+## 🏠 **Home Page**
 
 <p align="center">
-  <img src="images/home.png" width="700">
+  <img src="images/home.png" width="750">
 </p>
 
 ---
 
-### ✅ Real News Prediction
+## ✅ **Real News Prediction**
 
 <p align="center">
-  <img src="images/real_news.png" width="700">
+  <img src="images/real_news.png" width="750">
 </p>
 
 ---
 
-### 🛑 Fake News Prediction
+## 🛑 **Fake News Prediction**
 
 <p align="center">
-  <img src="images/fake_news.png" width="700">
+  <img src="images/fake_news.png" width="750">
 </p>
 
-📊 Dataset
+---
+
+# 📊 Dataset
 
 The dataset consists of two files:
 
-Fake.csv
-
-True.csv
+- 📁 **Fake.csv**
+- 📁 **True.csv**
 
 Each record contains:
 
-Title
+- Title  
+- Text  
+- Label (0 = Fake, 1 = Real)  
 
-Text
+NOTE: As the dataset is very huge for the git . Download it from the kaggle 
+  ( https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset )
 
-Label (0 = Fake, 1 = Real)
+---
 
-Note: The dataset is not included in this repository due to GitHub file size limitations.
+# 🛠️ Tech Stack
 
-🛠️ Tech Stack
+- Python  
+- Flask  
+- Pandas  
+- Scikit-learn  
+- HTML/CSS  
 
-Python
+---
 
-Flask
+# 📂 Project Structure
 
-Pandas
-
-Scikit-learn
-
-HTML/CSS
-
-📂 Project Structure
 fake-news-detector/
-│
+|
+├──news_dataset.csv
+| └── True.csv
+| └── Fake.csv
 ├── app.py
 ├── train_model.py
 ├── templates/
-│     └── index.html
+│ └── index.html
 ├── static/
-│     └── style.css
+│ └── style.css
+├── images/
+│ ├── home.png
+│ ├── real_news.png
+│ └── fake_news.png
 ├── requirements.txt
 ├── .gitignore
 └── README.md
 
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
+
+
+# ⚙️ Installation & Setup
+
+## 1️⃣ Clone the Repository
 git clone https://github.com/nancharlaanyothri/fake-news-detector.git
 cd fake-news-detector
 
-2️⃣ Create Virtual Environment
+## 2️⃣ Create Virtual Environment
 python -m venv venv
-venv\Scripts\activate   # Windows
+venv\Scripts\activate   
 
-3️⃣ Install Dependencies
+## 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Train the Model
-
+## 4️⃣ Train the Model
 Place the dataset inside:
 
 news_dataset.csv/
     ├── Fake.csv
     └── True.csv
-
-
 Then run:
-
 python train_model.py
 
-5️⃣ Run the Application
+## 5️⃣ Run the Application
 python app.py
-
-
-Open browser:
-
+Open your browser and go to:
 http://127.0.0.1:5000/
