@@ -1,110 +1,111 @@
-📰 Fake News Detection System
+📰 Fake News Detector
 
-A Machine Learning based web application that detects whether a news article is Real or Fake using Natural Language Processing (NLP).
+A Machine Learning powered web application that detects whether a news article is Real or Fake using Natural Language Processing (NLP) and Logistic Regression.
 
 🚀 Project Overview
 
-Fake news spreads rapidly through digital platforms and can mislead people.
-This project uses Machine Learning + NLP techniques to classify news articles as:
+This project uses:
+
+TF-IDF Vectorization for feature extraction
+
+Logistic Regression for classification
+
+Flask for web application development
+
+Scikit-learn for machine learning
+
+Users can input any news content, and the system predicts whether it is:
+
+🛑 Fake News
 
 ✅ Real News
 
-❌ Fake News
+🧠 Machine Learning Workflow
 
-The model is trained on labeled news datasets and deployed through a simple web interface.
+Data preprocessing (cleaning + lowercasing)
 
-🛠️ Technologies Used
+Combining news title and text
+
+TF-IDF feature extraction
+
+Train-test split
+
+Logistic Regression model training
+
+Model evaluation using Accuracy
+
+📊 Dataset
+
+The dataset consists of two files:
+
+Fake.csv
+
+True.csv
+
+Each record contains:
+
+Title
+
+Text
+
+Label (0 = Fake, 1 = Real)
+
+Note: The dataset is not included in this repository due to GitHub file size limitations.
+
+🛠️ Tech Stack
 
 Python
 
 Flask
 
-Scikit-learn
-
 Pandas
 
-NumPy
+Scikit-learn
 
-HTML
-
-CSS
-
-Pickle (.pkl model saving)
-
-🧠 Machine Learning Workflow
-
-Data Collection (Fake & Real news dataset)
-
-Data Preprocessing
-
-Removing punctuation
-
-Lowercasing
-
-Removing stopwords
-
-Feature Extraction
-
-TF-IDF Vectorization
-
-Model Training
-
-Model Evaluation
-
-Model Saving (.pkl files)
-
-Web App Integration using Flask
+HTML/CSS
 
 📂 Project Structure
-fake_news_detector/
+fake-news-detector/
 │
 ├── app.py
-├── model.pkl
-├── vectorizer.pkl
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── static/
-│   └── style.css
+├── train_model.py
 ├── templates/
-│   └── index.html
-└── news_dataset.csv/
+│     └── index.html
+├── static/
+│     └── style.css
+├── requirements.txt
+├── .gitignore
+└── README.md
 
-📊 Model Performance
-
-Accuracy: ~55–60% (based on current dataset)
-
-Balanced dataset of Real and Fake news
-
-Evaluation metrics used:
-
-Accuracy
-
-Precision
-
-Recall
-
-F1-score
-
-▶️ How to Run the Project
+⚙️ Installation & Setup
 1️⃣ Clone the Repository
-git clone <your-repo-link>
-cd fake_news_detector
+git clone https://github.com/nancharlaanyothri/fake-news-detector.git
+cd fake-news-detector
 
 2️⃣ Create Virtual Environment
 python -m venv venv
+venv\Scripts\activate   # Windows
 
-3️⃣ Activate Environment
-
-Windows:
-
-venv\Scripts\activate
-
-4️⃣ Install Dependencies
+3️⃣ Install Dependencies
 pip install -r requirements.txt
+
+4️⃣ Train the Model
+
+Place the dataset inside:
+
+news_dataset.csv/
+    ├── Fake.csv
+    └── True.csv
+
+
+Then run:
+
+python train_model.py
 
 5️⃣ Run the Application
 python app.py
 
-6️⃣ Open in Browser
+
+Open browser:
+
 http://127.0.0.1:5000/
