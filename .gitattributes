@@ -1,0 +1,8 @@
+model.pkl filter=lfs diff=lfs merge=lfs -text
+*vectorizerpkl filter=lfs diff=lfs merge=lfs -text
+*vectorizer.pkl filter=lfs diff=lfs merge=lfs -text
+news_dataset.csv filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+vectorizer.pkl filter=lfs diff=lfs merge=lfs -text
+news_dataset.csv/Fake.csv filter=lfs diff=lfs merge=lfs -text
+news_dataset.csv/True.csv filter=lfs diff=lfs merge=lfs -text

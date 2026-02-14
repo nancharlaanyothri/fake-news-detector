@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    
+<center>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+<center>
+<div class="main">
+    <h1 style="color: #ffcc00;"><b> 📰FAKE NEWS DETECTOR </b></h1>
+    
+
+    <form method="POST">
+        <textarea name="news" placeholder="Paste news article here..." required>{{ news_text }}</textarea>
+    </br>
+        </br>
+        <button type="submit">Analyze</button>
+    </form>
+
+
+    {% if prediction %}
+<div class="result">
+    <h2>{{ prediction }}</h2>
+</div>
+{% endif %}
+
+
+</center>
+</div>
+
+</body>
+</center>
+</html>
