@@ -27,7 +27,7 @@ Users can input any news content, and the system predicts whether it is:
 3. 🔎 TF-IDF feature extraction
 4. 📂 Train-test split
 5. 🤖 Logistic Regression model training
-6. 📈 Model evaluation using Accuracy
+
 
 ---
 
